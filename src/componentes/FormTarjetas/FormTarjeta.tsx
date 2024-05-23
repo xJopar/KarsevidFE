@@ -5,7 +5,7 @@ import { validate } from "../../utils/validacion";
 import BotonPrincipal from "../InterfazGrafica/boton/BotonPrincipal/BotonPrincipal";
 import MyInput from "../InterfazGrafica/input/MyInput";
 import MyPointer from "../InterfazGrafica/pointer/MyPointer";
-import cl from "./ListForm.module.scss";
+import cl from "./FormTarjeta.module.scss";
 
 interface TarjetaFormProps {
 	tableroID: string;

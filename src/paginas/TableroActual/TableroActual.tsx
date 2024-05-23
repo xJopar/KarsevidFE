@@ -1,6 +1,6 @@
 import React, { FC, FunctionComponent } from "react";
 import { useParams } from "react-router";
-import cl from "./CurrentBoard.module.scss";
+import cl from "./TableroActual.module.scss";
 import { useHistory } from "react-router-dom";
 import { useTypedSelector } from "../../hooks/useTypedSelector"; 
 import { IntefazTablero } from "../../types/tablero"; 

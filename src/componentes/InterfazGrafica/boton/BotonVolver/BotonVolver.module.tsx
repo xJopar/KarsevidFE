@@ -1,7 +1,7 @@
 import React, { FC, FunctionComponent } from "react";
 import BotonPrincipal from "../BotonPrincipal/BotonPrincipal"; 
 import { IoReturnUpBack } from "react-icons/io5";
-import cl from "./ReturnButton.module.scss"; 
+import cl from "./BotonVolver.module.scss"; 
 import { useHistory } from "react-router";
 
 interface BotonVolverProps {
@@ -26,7 +26,7 @@ const BotonVolver: FunctionComponent<BotonVolverProps> = ({
 	};
 
 	return (
-		<BotonPrincipal className={cl.returnBtn} onClick={returnBack} type={type}>
+		<BotonPrincipal className={cl.volverBtn} onClick={returnBack} type={type}>
 			<h2 className={cl.volverBtn__title}>{children}</h2>
 			<IoReturnUpBack className={cl.volverBtn__icon} />
 		</BotonPrincipal>

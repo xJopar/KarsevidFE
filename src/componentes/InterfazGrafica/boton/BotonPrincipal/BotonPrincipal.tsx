@@ -1,5 +1,5 @@
 import React, { FC, FunctionComponent } from "react";
-import cl from "./MyButton.module.scss";
+import cl from "./BotonPrincipal.module.scss";
 
 interface BotonPrincipalProps {
 	className?: string;
