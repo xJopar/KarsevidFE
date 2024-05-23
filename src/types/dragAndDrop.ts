@@ -5,5 +5,5 @@ export interface IDragAndDrop {
 	droppableIndexEnd: number;
 	draggableId: string;
 	type: string;
-	boardID: string;
+	tableroID: string;
 }
