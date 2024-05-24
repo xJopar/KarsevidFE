@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import RutasApp from "./componentes/AppRutas"; 
 import { useActions } from "./hooks/useActions";
 import { useTypedSelector } from "./hooks/useTypedSelector";
-import { getState, setState } from "./utils/guardadoLocal"; //trabajando
+import { getState, setState } from "./utils/guardadoLocal"; 
 import "./styles/App.scss"; 
 
 const App: FC = () => {
@@ -16,11 +16,11 @@ const App: FC = () => {
 		const localStorageCollection = getState();
 
 		if (localStorageCollection) {
-			const { tablero, tarjeta, tarea } = localStorageCollection;
+			const { tableros, tarjetas, tareas } = localStorageCollection;
 
-			setTablero(tablero);
-			setTarjeta(tarjeta);
-			setTarea(tarea);
+			setTablero(tableros);
+			setTarjeta(tarjetas);
+			setTarea(tareas);
 		}
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
